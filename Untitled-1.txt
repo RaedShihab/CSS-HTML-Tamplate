@@ -1,0 +1,21 @@
+<div class="header">
+          <div class="container">
+            <div class="header-content"> <!-- this Div is to solve float problems -->
+                <div class="logo">
+                    <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/32877/logo-thing.png' alt="logo image">
+                </div>
+                <ul class="nav">
+                   <li><a href="#">Home</a></li> 
+                   <li><a href="#">Portfolio</a></li>
+                   <li><a href="#">About</a></li>
+                   <li><a href="#">Services</a></li>
+                   <li><a href="#">Price</a></li>
+                   <li><a href="#">Team</a></li>
+                   <li><a href="#">Blog</a></li>
+                   <li><a href="#">Content</a></li>
+                </ul>
+            </div>
+                  <!-- add this after last floting element to avoid float problems-->
+                  <!-- <div class="clear"></div> -->
+          </div>
+        </div>
