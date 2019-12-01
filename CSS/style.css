@@ -28,7 +28,10 @@ button {
    clear: both;
 }
 .header-content {
-   overflow: hidden;
+   /* overflow: hidden; */
+}
+a {
+   text-decoration: none;
 }
 /* ///////////////////// */
 
@@ -51,19 +54,18 @@ button {
    float: left;
    list-style: none;
 }
-.nav li {
+.nav > li {
    display: inline-block;
    text-align: right;
 }
 
-.header .nav li a {
-   text-decoration: none;
+.header .nav > li > a {
    font-size: 13px;
    color: white;
    padding: 30px 10px;
    display: block;
 }
-.header .nav li a.active::after, .header .nav li a::after {
+.header .nav li a.active::after, .header .nav > li > a::after {
    content: '';
    background-color: #6195ff;
    display: block;
@@ -71,16 +73,39 @@ button {
    transition: width .5s;
    margin-top: 3px;
 }
-.header .nav li a::after {
+.header .nav > li > a::after {
    width: 0%;
 }  
 .header .nav li a.active::after {
    width: 100%;
 }
-.header .nav li a:hover::after {
+.header .nav > li > a:hover::after {
    width: 100%;
 }
-
+.dropdown {
+   position: relative;
+}
+.dropdown-menue{
+   position: absolute;
+   background-color: aqua;
+   color: black;
+   width: 150px;
+   left: -100%;
+   top: 77%;
+   visibility: hidden;
+   opacity: 0;
+}
+.dropdown:hover .dropdown-menue {
+   opacity: 1;
+   visibility: visible;
+   transition: opacity 0.7s, visibility 0.7s;
+}
+.dropdown-menue a {
+   width: 100%;
+   display: block;
+   text-align: center;
+   color: white;
+}
 /*Home*/
 .home {
    position: relative;
