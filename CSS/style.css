@@ -17,6 +17,12 @@ h1, h2, h3, h4, h5 {
 button {
    font-family: inherit
 }
+.button-hover {
+   transition: opacity .5s;
+}
+.button-hover:hover {
+   opacity: 0.8;
+}  
 /* Solving Float peoblems*/
 .clear {
    clear: both;
@@ -28,11 +34,17 @@ button {
 
 /*Header*/
 .header {
-   background: red;
+   position: fixed;
+   z-index: 1;
+   width: 100%;
 }
 .header .logo {
    width: 40%;
    float: left
+}
+.header .logo img {
+   width: 20%;
+   margin-top: 15px;
 }
 .header .nav {
    width: 60%;
@@ -41,13 +53,32 @@ button {
 }
 .nav li {
    display: inline-block;
+   text-align: right;
 }
 
 .header .nav li a {
    text-decoration: none;
+   font-size: 13px;
    color: white;
    padding: 30px 10px;
    display: block;
+}
+.header .nav li a.active::after, .header .nav li a::after {
+   content: '';
+   background-color: #6195ff;
+   display: block;
+   height: 3px;   
+   transition: width .5s;
+   margin-top: 3px;
+}
+.header .nav li a::after {
+   width: 0%;
+}  
+.header .nav li a.active::after {
+   width: 100%;
+}
+.header .nav li a:hover::after {
+   width: 100%;
 }
 
 /*Home*/
