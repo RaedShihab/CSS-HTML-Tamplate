@@ -239,3 +239,20 @@ a {
 .ltr-effect:hover::after {
    width: 100%;
 }
+/* Portfolio contecnt*/
+.portfolio-content {
+   overflow: hidden;
+}
+.portfolio-content .portfolio-item {
+   float: left;
+   width: 30%;
+}
+.portfolio-content .portfolio-item img {
+   width: 100%;
+}
+.portfolio-item.middel {
+   margin: 0 40px;
+}
+.portfolio-item {
+   margin-bottom: 40px;
+}
