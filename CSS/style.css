@@ -255,4 +255,56 @@ a {
 }
 .portfolio-item {
    margin-bottom: 40px;
+   position: relative;
+   padding: 20px;
+}
+.overlay-effect {
+   text-align: center;
+   position: absolute;
+   background-color: rgba(0,0,0, 0.65);
+   top: 0;
+   left: 0;
+   height: 100%;
+   width: 100%;
+   opacity: 0;
+   visibility: hidden;
+   transition: visibility, opacity 0.5s;
+}
+.portfolio-item:hover .overlay-effect {
+   visibility: visible;
+   opacity: 1;
+}
+.portfolio-item:hover .overlay-effect h3{
+   margin-top: 0;
+}
+.portfolio-item:hover .overlay-effect span{
+   margin-top: 0;
+}
+.overlay-effect h3 {
+   color: white;
+   font-style: bold;
+   margin-top: 50px;
+   transition: margin 0.5s;
+}
+.overlay-effect span {
+   color: #6195ff;
+   margin-top: 50px;
+   transition: margin 0.5s;
+}
+.overlay-effect-items {
+   position: absolute;
+   transform: translate(-50%, -50%);
+   top: 50%;
+   left: 50%;
+   width: 70%;
+}
+.overlay-effect-items a {
+   display: inline-block;
+   background-color: #6195ff;
+   color: white;
+   width: 50px;
+   height: 50px;
+}
+.overlay-effect-items a i {
+   line-height:50px ;
 }
