@@ -12,7 +12,7 @@ body {
    margin: auto;
 }
 h1, h2, h3, h4, h5 {
-   font-family: montserrat, sans-serif;
+   font-family: 'Montserrat', sans-serif;
 }
 button {
    font-family: inherit
@@ -187,7 +187,7 @@ a {
 /* ///////////////  About Sction */
 
 /* About content*/
-.about-content {
+.about-content, .services-content {
    overflow: hidden;
 }
 .about-item {
@@ -240,6 +240,9 @@ a {
    width: 100%;
 }
 /* Portfolio contecnt*/
+.portfolio {
+   background-color: #FAFAFA;
+}
 .portfolio-content {
    overflow: hidden;
 }
@@ -321,4 +324,92 @@ a {
    top: 50%;
    left: 50%;
    width: 70%;
+}
+/* Services*/
+.services-item {
+   width: 32%;
+   position: relative;
+   float: left;
+   margin-bottom: 20px;
+   border: solid 1px rgb(201, 201, 201);
+   padding: 30px 15px 30px 70px;
+}
+ .services-item.middel {
+   margin: 0 2%
+}
+.services-item i {
+   color: #6195ff;
+   position: absolute;
+   left: 25px;
+   top: 25px
+}
+.service-item-desc {
+   color: #999;
+   text-transform: capitalize;
+   line-height: 1.6;
+
+}
+.service-item-title {
+   margin-bottom: 20px;
+   font-size: 21px;
+   font-weight: 700;
+   text-transform: capitalize;
+} 
+.ltr-effect:hover .service-item-title {
+   color: white;
+}
+/* Why Coose us section*/
+.choose-us {
+   background-color: #e8e8e8;
+}
+.choose-us-content {
+   position: relative;
+   /* background-color: aqua; */
+   overflow: hidden;
+}
+.choose-us-left {
+   float: left;
+   width: 49%;
+   /* background-color: blanchedalmond; */
+   padding-bottom: 35px;
+   position: relative;
+}
+.choose-us-right {
+   position: absolute;
+   float: left;
+   width: 49%;
+   /* background-color: blueviolet; */
+   right: 0;
+}
+.img-section img {
+   width: 100%;
+}
+.choose-us-header {
+   font-weight: 700;
+   margin-top: 0px;
+   margin-bottom: 20px;
+   font-size: 30px;
+   text-transform: capitalize;
+}
+.choose-us-header::after {
+   content: '';
+   display: block;
+   height: 3px;
+   width: 40px;
+   background-color: #6195ff;
+   margin-top: 10px;
+}
+.chooseus-main-paragraph{
+   margin-top: 60px;
+   margin-bottom: 15px;
+   line-height: 1.6;
+}
+.chooseus-sum-paragraphs {
+   margin: 20px 0;
+   padding-left: 20px;
+}
+.chooseus-sum-paragraphs i {
+   position: absolute;
+   color: #6195ff;
+   left: 1;
 }
