@@ -245,16 +245,12 @@ a {
 }
 .portfolio-content .portfolio-item {
    float: left;
-   width: 30%;
+   width: 33.333333333333333333333%;
 }
 .portfolio-content .portfolio-item img {
    width: 100%;
 }
-.portfolio-item.middel {
-   margin: 0 40px;
-}
 .portfolio-item {
-   margin-bottom: 40px;
    position: relative;
    padding: 20px;
 }
@@ -268,28 +264,56 @@ a {
    width: 100%;
    opacity: 0;
    visibility: hidden;
-   transition: visibility, opacity 0.5s;
+   transition: visibility, opacity 0.2s;
 }
 .portfolio-item:hover .overlay-effect {
    visibility: visible;
    opacity: 1;
 }
-.portfolio-item:hover .overlay-effect h3{
-   margin-top: 0;
-}
-.portfolio-item:hover .overlay-effect span{
-   margin-top: 0;
-}
-.overlay-effect h3 {
-   color: white;
-   font-style: bold;
-   margin-top: 50px;
-   transition: margin 0.5s;
-}
 .overlay-effect span {
+   position: relative;
+   top: 20px;
    color: #6195ff;
-   margin-top: 50px;
-   transition: margin 0.5s;
+   text-transform: uppercase;
+   margin-bottom: 5px;
+   opacity: 0;
+   transition: top, opacity 0.2;
+   }
+.overlay-effect h3 {
+   position: relative;
+   top: 20px;
+   color: white;
+   margin-bottom: 10px;
+   font-style: bold;
+   /* opacity: 0; */
+   transition: top 0.1s;
+   /* transition: opacity 0.3s; */
+   transition-delay: 0.1s;
+}
+.overlay-effect a {
+   position: relative;
+   /* top: 20px; */
+   display: inline-block;
+   background-color: #6195ff;
+   color: white;
+   width: 50px;
+   height: 50px;
+   visibility: hidden;
+   opacity: 0;
+   transition: visibility, opacity 0.9s;
+   /* transition-delay: 0.1s; */
+}
+.portfolio-item:hover .overlay-effect  a {
+   visibility: visible;
+}
+.portfolio-item:hover .overlay-effect span,
+.portfolio-item:hover .overlay-effect  a,
+.portfolio-item:hover .overlay-effect h3 {
+   top:0;
+   opacity: 1;
+}
+.overlay-effect-items a i {
+   line-height:50px ;
 }
 .overlay-effect-items {
    position: absolute;
@@ -297,14 +321,4 @@ a {
    top: 50%;
    left: 50%;
    width: 70%;
-}
-.overlay-effect-items a {
-   display: inline-block;
-   background-color: #6195ff;
-   color: white;
-   width: 50px;
-   height: 50px;
-}
-.overlay-effect-items a i {
-   line-height:50px ;
 }
