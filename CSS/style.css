@@ -446,15 +446,15 @@ a {
    /* position: relative; */
 }
 .number-items {
-   background-color: violet;
    text-align: center;
-   /* margin: auto; */
-   width: 15%;
+   width: 25%;
    float: left;
    padding: 15px 0;
-   /* top: 100px; */
-   /* position: absolute;   */
 }
 .numbers-container {
-   background-color: yellow;
+   position: absolute;
+   width: 60%;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
 }
