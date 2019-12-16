@@ -580,4 +580,8 @@ a {
 /*Our Team section*/
 .our-team-item {
    float: left;
+   width: 30%;
+}
+.our-team-item .middel {
+   margin: 0 5%;
 }
