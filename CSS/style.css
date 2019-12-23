@@ -586,20 +586,18 @@ a {
    text-align: center;
    float: left;
    width: 30%;
-   background-color: rgb(236, 235, 235);
    padding: 40px 20px;
+   background-color: rgba(209, 201, 201, 0.306)
 }
  .our-team-item.middel {
    margin: 0 5%;
 }
 .member-img img {
+   opacity: 1;
    width: 100%;
 }
 .member-img {
    position: relative;
-}
-.member-img img {
-   opacity: 1
 }
 .member-img:hover {
    opacity: .8;
@@ -643,7 +641,47 @@ a {
    color: white;
 }
 /*Recent news section*/
-.recent-news {
+.blogs {
    background-color: #FAFAFA;
 }
-
+.blogs-content {
+   overflow: hidden;
+}
+.blogs-item {
+   float: left;
+   width: 30%;
+   background-color: white;
+   text-align: center;
+}
+.blogs-img {
+   /* position: relative; */
+   width: 100%;
+}
+.blogs-item.middle {
+   margin: 0 5%;
+}
+.blogs-img img {
+   width: 100%;
+}
+.blog-icons {
+   padding: 20px 0;
+   list-style: none;
+}
+.blog-icons li span {
+   padding-right: 20px;
+}
+.blog-icons li i {
+   color: #6195ff;
+}
+.blog-icons li {
+   display: inline-block;
+}
+.blog-title {
+   padding-bottom: 18px;
+}
+.read-more {
+   text-align: start;
+   display: block;
+   padding: 18px 0;
+   padding-left: 20px;;
+}
