@@ -731,8 +731,10 @@ a {
    border: none;
 }
 #message {
-   text-align: start;
-   height: 60px;
+   min-height: 50px;
+}  
+textarea {
+   display:block;
 }
 .send-message {
    margin-top: 20px;
@@ -741,4 +743,50 @@ a {
    height: 5%;
    border-radius: 5px;
    border: none;
+   cursor: pointer;
+}
+.send-message span {
+   text-transform: capitalize;
+   color: white;
+}
+/* Footer*/
+.footer {
+   height: 40%;
+   background-color: #1C1D21;
+   position: relative;
+}
+.footer-content {
+   position: absolute;
+   width: 45%;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   text-align: center;
+}
+.footer-list {
+   list-style: none;
+}
+.footer-list li {
+   background-color: #6195ff;
+   display: inline-block;
+   margin-left: 9px;
+   border-radius: 5px;
+}
+.footer-list li a {
+   display: block;
+   padding: 20px
+}
+.footer-list li i {
+   color: white;
+}
+.footer-logo {
+   color: white;
+   font-size: 50px;
+   text-transform: capitalize;
+   margin-bottom: 35px;
+}
+.copy-rights {
+   display: block;
+   margin-top: 30px;
+   color: #999;
 }
