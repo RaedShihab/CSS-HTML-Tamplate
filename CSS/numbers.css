@@ -1,0 +1,32 @@
+.number {
+    position: relative;
+    background-image: url(../images/images/background/background2.webp);
+    height: 280px;
+    background-attachment: fixed;
+ }
+ .numbers-icons {
+    color: var(--skyBlueColor);
+ }
+ .counter span {
+    display: block;
+    color: var(--WhiteColor);
+    font-size: 35px;
+    margin: 10px 0;
+ }
+ .number-items span {
+    color: var(--WhiteColor);
+    text-transform: capitalize;
+ }
+ .number-items {
+    text-align: center;
+    width: 25%;
+    float: left;
+    padding: 15px 0;
+ }
+ .numbers-container {
+    position: absolute;
+    width: 60%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+ }

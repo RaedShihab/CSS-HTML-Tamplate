@@ -1,0 +1,58 @@
+.choose-us-content {
+    position: relative;
+    overflow: hidden;
+ }
+ .choose-us-item {
+    float: left;
+    width: 49%;
+ }
+ .img-section img {
+    width: 100%;
+ }
+ .choose-us-header {
+    font-weight: 700;
+    margin-top: 0px;
+    font-size: 30px;
+    text-transform: capitalize;
+ }
+ .choose-us-header::after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 40px;
+    background-color: var(--skyBlueColor);
+    margin-top: 10px;
+ }
+ .chooseus-main-paragraph{
+    margin-top: 60px;
+    margin-bottom: 15px;
+    line-height: 1.6;
+    font-size: 17px;
+ }
+ .chooseus-sum-paragraphs {
+    margin: 20px 0;
+    padding-left: 20px;
+    font-size: 17px;
+ }
+ .chooseus-sum-paragraphs i {
+    position: absolute;
+    color: var(--skyBlueColor);
+    left: 1;
+ }
+ .bollets {
+    text-align: center;
+ }
+ .bollets li {
+    background-color: rgb(130, 130, 130);
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    margin: 15px 8px
+ }
+ .bollets .active {
+    background-color: var(--skyBlueColor);
+ }
+ .bollets li:hover {
+    background-color: var(--skyBlueColor);
+ }

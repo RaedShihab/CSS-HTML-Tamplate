@@ -1,0 +1,62 @@
+.contact-information {
+    width: 50%;
+    overflow: hidden;
+ }
+ .contact-information-item {
+    float: left;
+    width: 33.3333333%;
+    text-align: center;
+ }
+ .contact-information-item i {
+    color: var(--skyBlueColor);
+ }
+ .contact-information-item span {
+    color: var(--gray);
+ }
+ .information-title {
+    padding: 20px 0;
+    text-transform: capitalize;
+ }
+ .message-form {
+    padding-top: 20px;
+    width: 40%;
+    text-align: center;
+ }
+ #name {
+    width: 47.5%;
+ }
+ #email {
+    width: 47.5%;
+ }
+ #subject{
+    width: 98%;
+ }
+ #message {
+    width: 98%;
+ }
+ #message, #subject, #email, #name {
+    margin: 2% 1%;
+    height: 30px;
+    padding-left: 10px;
+    border: none;
+ }
+ #message {
+    min-height: 50px;
+ }  
+ textarea {
+    display:block;
+ }
+ .send-message {
+    margin-top: 20px;
+    background-color: var(--skyBlueColor);
+    width: 30%;
+    height: 5%;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+ }
+ .send-message span {
+    text-transform: capitalize;
+    color: var(--WhiteColor);
+    font-weight: bold;
+ }

@@ -1,0 +1,77 @@
+.portfolio-content {
+    overflow: hidden;
+ }
+ .portfolio-content .portfolio-item {
+    float: left;
+    width: 33.333333333333333333333%;
+ }
+ .portfolio-content .portfolio-item img {
+    width: 100%;
+ }
+ .portfolio-item {
+    position: relative;
+    padding: 20px;
+ }
+ .overlay-effect {
+    text-align: center;
+    position: absolute;
+    background-color: var(--overlayColor);
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility, opacity 0.2s;
+ }
+ .portfolio-item:hover .overlay-effect {
+    visibility: visible;
+    opacity: 1;
+ }
+ .overlay-effect span {
+    position: relative;
+    top: 20px;
+    color: var(--skyBlueColor);
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    opacity: 0;
+    transition: top, opacity 0.2;
+    }
+ .overlay-effect h3 {
+    position: relative;
+    top: 20px;
+    color: var(--WhiteColor);
+    font-style: bold;
+    transition: top 0.1s;
+    transition-delay: 0.1s;
+ }
+ .overlay-effect a {
+    position: relative;
+    display: inline-block;
+    background-color: var(--skyBlueColor);
+    color: var(--WhiteColor);
+    width: 50px;
+    height: 50px;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility, opacity 0.9s;
+ }
+ .portfolio-item:hover .overlay-effect  a {
+    visibility: visible;
+ }
+ .portfolio-item:hover .overlay-effect span,
+ .portfolio-item:hover .overlay-effect  a,
+ .portfolio-item:hover .overlay-effect h3 {
+    top:0;
+    opacity: 1;
+ }
+ .overlay-effect-items a i {
+    line-height:50px ;
+ }
+ .overlay-effect-items {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    width: 70%;
+ }

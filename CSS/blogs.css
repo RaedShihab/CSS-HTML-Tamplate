@@ -1,0 +1,30 @@
+.blogs-img {
+    width: 100%;
+ }
+ .blogs-img img {
+    width: 100%;
+ }
+ .blog-icons {
+    padding: 15px 0 15px 0;
+ }
+ .blog-icons li span {
+    padding-right: 20px;
+ }
+ .blog-icons li i {
+    color: var(--skyBlueColor);
+ }
+ .blog-icons li {
+    display: inline-block;
+  }
+ .blog-container {
+    padding: 10px 10px 10px 15px;
+ }
+ .blogs-content {
+    overflow: hidden;
+ }
+ .blogs-item {
+    float: left;
+    width: 30%;
+    background-color: var(--WhiteColor);
+    /* text-align: center; */
+ }

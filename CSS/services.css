@@ -1,0 +1,27 @@
+.services-item {
+    width: 32%;
+    position: relative;
+    float: left;
+    border: solid 1px var(--grayBorder);
+    padding: 30px 15px 30px 70px;
+ }
+ .services-item i {
+    color: var(--skyBlueColor);
+    position: absolute;
+    left: 25px;
+    top: 25px
+ }
+ .service-item-desc {
+    color: var(--gray);
+    text-transform: capitalize;
+    line-height: 1.6;
+ 
+ }
+ .service-item-title {
+    font-size: 21px;
+    font-weight: 700;
+    text-transform: capitalize;
+ } 
+ .ltr-effect:hover .service-item-title {
+    color: var(--WhiteColor);
+ }

@@ -1,0 +1,77 @@
+.pricing-content {
+    overflow: hidden;
+ }
+ .pricing-item {
+    float: left;
+    width: 32%;
+    border: 1px solid var(--grayBorder);
+    text-align: center;
+    z-index: 0;
+ }
+ .pricing-item > span {
+    display: block;
+    padding: 10px 0;
+    color: var(--gray);
+ }
+ .price-details {
+    margin: 20px auto;
+    width: 140px;
+    height: 140px;
+    text-align: center;
+    border: 2px solid var(--skyBlueColor);
+    border-radius: 50%;
+ }
+ .price-title {
+    font-size: 42px;
+    padding-top: 40px;
+    transition: color 0.5s;
+ }
+ .per-month {
+    text-transform: uppercase;
+    transition: color 0.5s;
+ }
+ .click-purchase {
+    border: var(--skyBlueColor) solid 2px;
+    margin: 30px 0;
+    cursor: pointer;
+    transition: opacity .5s;
+    background-color: inherit;
+ }
+ .click-purchase span {
+    display: block;
+    padding: 15px 40px;
+    color: var(--skyBlueColor);
+ }
+ .pricing-item .top-span {
+    padding-top: 35px;
+    text-transform: uppercase;
+    transition: color 0.5s;
+ }
+ /*UP TO DOWN EFFECT*/
+.utd-effect {
+   position: relative;
+}
+.utd-effect::after {
+   content: '';
+   background-color: var(--overlayColor);
+   position: absolute;
+   width: 100%;
+   height: 0%;
+   top: 0;
+   left: 0;
+   z-index: -1;
+   transition: height 0.5s;
+}
+.utd-effect:hover::after {
+   height: 100%;
+}
+.utd-effect:hover .price-title,
+.utd-effect:hover .per-month {
+   color: var(--WhiteColor);
+}
+.utd-effect:hover .top-span {
+   color: var(--skyBlueColor);
+}
+.click-purchase:hover {
+   opacity: 0.8;
+}

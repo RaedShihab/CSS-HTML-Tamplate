@@ -1,0 +1,46 @@
+.about-content, .services-content {
+    overflow: hidden;
+ }
+ .about-item {
+    text-align: center;
+    border: var(--grayBorder) solid;
+    border-width: 2px;
+    padding: 40px 20px;
+    float: left;
+    width: 30%
+ }
+ .icon {
+    color: var(--skyBlueColor);  
+ }
+ .about-item-title {
+    transition: .5s;
+ }
+ .about-item-desc {
+    line-height: 1.6;
+    color: var(--gray);
+ }
+ .about-item-link {
+    color: var(--skyBlueColor);
+    text-transform: capitalize;
+ }
+ .ltr-effect {
+  position: relative;
+  z-index: 0;
+ }
+ .ltr-effect:hover .about-item-title  {
+    color: var(--WhiteColor);
+   }
+ .ltr-effect::after {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 0%;
+    top: 0;
+    left: 0;
+    background-color: var(--overlayColor);
+    transition:  .5s;
+    z-index: -1 ;
+ }
+ .ltr-effect:hover::after {
+    width: 100%;
+ }

@@ -1,0 +1,48 @@
+.home {
+    position: relative;
+    height: 100vh;
+    background-image: url(../images/images/background/background1.webp);
+    background-size: cover;
+    background-attachment: fixed;
+ }
+ .home-content{ 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 780px;
+ }
+ .overlay {
+    position: relative;
+    background-color: var(--overlayColor);
+    width: 100%;
+    height: 100%;
+ }
+ .home .title {
+    text-transform: uppercase;
+    color: var(--WhiteColor);
+    font-size: 2.5rem
+ }
+ .home .description {
+    margin: 5px 0;
+    color: var(--WhiteColor);
+    letter-spacing: 2px;
+    line-height: 1.5;
+ }
+ .home .btn {
+    min-width: 160px;
+    border-radius: 5px;
+    border: 0;
+    padding: 10px 0;
+    font-size: 18px;
+    cursor: pointer;
+ }
+ .home .btn-start {
+    background-color: var(--WhiteColor);
+    margin-right: 10px;
+ }
+ .home .btn-learn {
+    background-color: var(--skyBlueColor);
+    color: var(--WhiteColor);
+ }
