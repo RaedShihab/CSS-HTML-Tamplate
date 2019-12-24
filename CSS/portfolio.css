@@ -1,8 +1,7 @@
 .portfolio-content {
     overflow: hidden;
  }
- .portfolio-content .portfolio-item {
-    float: left;
+.portfolio-item {
     width: 33.333333333333333333333%;
  }
  .portfolio-content .portfolio-item img {

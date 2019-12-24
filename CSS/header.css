@@ -4,17 +4,15 @@
     width: 100%;
     background-color: rgba(0,0,0, 0.55)
  }
- .header .logo {
+ .logo {
     width: 40%;
-    float: left
  }
  .header .logo img {
     width: 20%;
     margin-top: 15px;
  }
- .header .nav {
+ .nav {
     width: 60%;
-    float: left;
  }
  .nav > li {
     display: inline-block;

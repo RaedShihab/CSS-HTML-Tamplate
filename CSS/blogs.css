@@ -23,8 +23,6 @@
     overflow: hidden;
  }
  .blogs-item {
-    float: left;
-    width: 30%;
     background-color: var(--WhiteColor);
     /* text-align: center; */
  }

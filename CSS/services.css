@@ -1,7 +1,6 @@
 .services-item {
     width: 32%;
     position: relative;
-    float: left;
     border: solid 1px var(--grayBorder);
     padding: 30px 15px 30px 70px;
  }
